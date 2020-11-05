@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:;
+        
+            
+        }
+
+        h1{
+            text-align: center;
+        }
+        .container:hover{
+            box-shadow: 2px 10px 25px 2px black;
+            
+        }
+        .container{
+            margin: auto;
+            margin-top: 100px;
+            /* background-color: rgb(235, 190, 173); */
+            
+            padding: 20px;
+           border-radius: 20px;
+           box-shadow: 2px 1px 14px 1px black;
+           width: fit-content;
+           
+        }
+
+        .form-group input:hover {
+
+            box-shadow: 2px 2px 10px 2px black;
+            cursor: pointer;
+        }
+
+        .form-group input:active{
+            box-shadow: 1px 1px 1px 1px black;
+            
+            
+        }
+
+        .form-group input {
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+    width: 430px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+    
+    cursor: pointer;
+    }
+   
+    </style>
+</head>
+<body>
+     
+
+     <div class="container">
+
+        <h1>Simple file upload MongoDB service.</h1>
+
+        
+
+        <form action="/uploadfile" enctype="multipart/form-data" method="POST" class="form-group">
+        
+            <input type="file" name="myFile" id="">
+            <input type="submit" value="upload file">
+            
+        
+        </form>
+
+        <br>
+        <br>
+         <form action="/uploadmultiple" enctype="multipart/form-data" method="POST" class="form-group">
+            
+            <input type="file" name="myFiles" id=" " multiple>
+            <input type="submit" value="upload Multiple files">
+    
+        
+        </form>
+        <br>
+        <br>
+         <form action="/uploadphoto" enctype="multipart/form-data" method="POST" class="form-group">
+            
+            <input type="file" name="myImage" id="" accept="image/*">
+            <input type="submit" value="upload photo">
+    
+        
+        </form>
+
+   
+        
+       
+     </div>
+
+     
+
+
+
+</body>
+</html>
